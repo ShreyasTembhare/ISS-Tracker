@@ -1,39 +1,35 @@
 # ISS-Tracker - Tracking the International Space Station
 
-ISS Tracker is a python script to collect real-time information related to the International Space Station (ISS) just from your terminal. This script uses [WTIA](https://wheretheiss.at/w/developer) and [Open Notify](http://open-notify.org/Open-Notify-API/) APIs to get the information related to ISS.
-
+ISS Tracker is a Python script that collects real-time information about the International Space Station (ISS) using a **Streamlit Web Interface**. This project utilizes [WTIA](https://wheretheiss.at/w/developer) for ISS details and [Open Notify](http://open-notify.org/Open-Notify-API/) for astronaut data.
 
 
 ## Information Provided
 
-- Space station date & time.
-- Visibility of the space station. 
+- Real-time ISS location (Latitude, Longitude, Altitude, Velocity).
 - Google Map URL for ISS Current Location.
-- Number of people in space and their names.
-- Automatically refresh data after every 60 seconds.
+- Number of people currently in space and their names.
 - ISS pass times (upcoming ISS passes for your country).
-- Space station  Latitude, Longitude, Altitude (Km), Velocity (Km\h), Footprint.
+- Automatic updates every **60 seconds**.
 
 ## Git Installation
 ```
-# clone the repo
-$ git clone https://github.com/sameera-madushan/ISS-Tracker.git
+# Clone the repo
+git clone https://github.com/yourusername/ISS-Tracker.git
 
-# change the working directory to ISS-Tracker
-$ cd ISS-Tracker
+# Change to the working directory
+cd ISS-Tracker
 
-# install the requirements
-$ pip3 install -r requirements.txt
+# Install the requirements
+pip install -r requirements.txt
 ```
-## Usage
+
+## Running the Streamlit App
 ```
-python tracker.py
+streamlit run iss_tracker.py
 ```
+
+This will start the Streamlit web app, and you can access it via the local URL displayed in the terminal.
 
 ## Support & Contributions
-- Please ⭐️ this repository if this project helped you!
-- Contributions of any kind welcome!
-
-
-
-
+- Please ⭐️ this repository if you find it useful!
+- Contributions are welcome! Feel free to open a pull request. 🚀
